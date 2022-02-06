@@ -119,3 +119,21 @@ function arrRevers () {
 };
 arrRevers(arrayRevers);
 console.log('Reversed Array = ', arrayRevers);
+
+// Ще один варіант без використання reverse()
+let arrayRevers2 = [1, 2, 3];
+console.log('Not Reversed Array2 = ', arrayRevers2);
+
+function arrRevers2 () {
+    let newArr= [];
+    for (let i = 0; i < arguments.length; i++) {
+        let argument = arguments[i];
+        for (let j = argument.length-1; j >= 0; j--) {
+            let argumentElement = argument[j];
+            newArr.push(argumentElement);
+        };
+    };
+    arrayRevers2 = newArr;
+};
+arrRevers2(arrayRevers2);
+console.log('Reversed Array2 = ', arrayRevers2);
