@@ -60,8 +60,12 @@ sumArr(arr);
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 function midlArr(a) {
     let midlSum = 0;
+    // for (let i = 0; i < a.length; i++) {
+    //     let aElement = a[i];
+    //     midlSum += aElement / a.length;
+    // }
     for (let aElement of a) {
-        midlSum += aElement / 2;
+        midlSum += aElement / a.length;
     };
     console.log('Midl Number from Array = ', midlSum);
     return midlSum;
